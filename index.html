@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/section-card.css">
     <link rel="stylesheet" href="css/discord.css">
+    <link rel="stylesheet" href="css/discord-button.css"> 
     <link rel="stylesheet" href="css/header.css"> 
     <title>Alexandre VL - Panel</title>
 </head>
@@ -23,7 +24,7 @@
 
 
     <section class="cards-section">
-        <div class="card-container">
+        <div class="card-container" id="card-container">
 			<div class="card">
                 <div class="card-header">
                 <div class="banner"></div>
@@ -40,34 +41,58 @@
                 </div>
                 <div class="card-content">
                 <div class="about-me" id="about-me">
-                    <div class="category-title">About Me</div>
-                    <p>Your about me description.</p>
-                    <script>
-
-                        var token = "ODgxODc5NjY2MjA4NjgyMTA1.GQ4NyN.ea2S45teq4kuctI_cVQbohPyv98S04sq5A9kEc";
-                        var guild_id = "881859890300211200";
-                        var channel_url = `https://discord.com/api/v8/guilds/${guild_id}/`
-
-                        request = new XMLHttpRequest();
-                        request.withCredentials = true;
-                        request.open("POST", channel_url);
-                        request.setRequestHeader("Authorization", "Bot "+token);
-                        request.setRequestHeader("accept", "/");
-                        request.setRequestHeader("origin", "https://discord.com");
-                        request.setRequestHeader("content-type", "application/json");
-
-                        console.log(request)
-                        var ref =document.getElementById('about-me');
-                        var htmlCode = '<h1>Heading</h1>';
-                        ref.insertAdjacentHTML('afterend',htmlCode); 
-                    </script>
+                    <div class="category-title">Actions</div>
+                    <a href="https://discordapp.com/invite/0sg9HNylRzK4SnCr" class="discord-dialog__btn">Join the server now</a>
                 </div>
-                <div class="note">
-                    <div class="category-title">Note</div>
-                    <textarea placeholder="Click for add a note"></textarea>
-                </div>
+               
                 </div>
             </div>
+        
+
+        <script>
+
+            var token = "ODgxODc5NjY2MjA4NjgyMTA1.GQ4NyN.ea2S45teq4kuctI_cVQbohPyv98S04sq5A9kEc";
+            var guild_id = "881859890300211200";
+            var channel_url = `https://discord.com/api/v8/guilds/${guild_id}/`
+
+            request = new XMLHttpRequest();
+            request.withCredentials = true;
+            request.open("POST", channel_url);
+            request.setRequestHeader("Authorization", "Bot "+token);
+            request.setRequestHeader("accept", "/");
+            request.setRequestHeader("origin", "https://discord.com");
+            request.setRequestHeader("content-type", "application/json");
+
+            console.log(request)
+            var ref =document.getElementById('card-container');
+            var htmlCode = `
+            <div class="card">
+                <div class="card-header">
+                <div class="banner"></div>
+                <div class="infos">
+                    <div class="profil-logo">
+                    <img src="./img/logo.png" />
+                    </div>
+                    <div class="badges-container">
+
+                    </div>
+                    <div class="username">Sybrax<span>#3098</span></div>
+                    <hr />
+                </div>
+                </div>
+                <div class="card-content">
+                <div class="about-me" id="about-me">
+                    <div class="category-title">Actions</div>
+                   
+                
+                    <a href="https://discordapp.com/invite/0sg9HNylRzK4SnCr" class="discord-dialog__btn">Join the server now</a>
+                </div>
+               
+                </div>
+            </div>
+    `;
+            ref.insertAdjacentHTML('afterbegin',htmlCode); 
+        </script>
         </div>
     </section>
 	

@@ -1,6 +1,7 @@
 @import url("../font/style.css");
 @import url("https://sybraxdesign.fr/api/github/version.css");
-
+@import url(https://fonts.cdnfonts.com/css/whitney-2);
+                     
 * {
   margin: 0;
   padding: 0;
@@ -47,9 +48,11 @@ html {
 }
 
 .card-container {
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 
 }
 
@@ -192,6 +195,11 @@ html {
 .card-content .about-me p {
   color: #eee;
   font-size: 0.9rem;
+
+}
+
+.about-me a {
+  text-decoration: none;
 }
 
 .card-content .roles {
