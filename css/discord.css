@@ -8,11 +8,12 @@
 
 body,
 html {
-  font-family: "Whitney", sans-serif;
-  height: 100%;
-  display: flex;
+   font-family: "Whitney", sans-serif;
+ /*  height: 100%; */
+/*   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+  background-color: #a395e9; 
 
 }
 
@@ -53,6 +54,7 @@ html {
 }
 
 .card {
+  font-family: "Whitney", sans-serif;
   box-sizing: border-box;
   background: #171717;
   width: 300px;
@@ -63,6 +65,7 @@ html {
   box-shadow: 0px 0px 16px 3px rgba(0, 0, 0, 0.2);
   overflow: auto;
   scrollbar-width: none;
+  
 }
 
 .card::-webkit-scrollbar {
@@ -89,7 +92,7 @@ html {
 
 .card-header .infos .profil-logo {
   position: absolute;
-  top: -280%;
+  top: -220%;
 }
 
 .card-header .infos .profil-logo img {
