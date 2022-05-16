@@ -25,30 +25,6 @@
 
     <section class="cards-section">
         <div class="card-container" id="card-container">
-			<div class="card">
-                <div class="card-header">
-                <div class="banner"></div>
-                <div class="infos">
-                    <div class="profil-logo">
-                    <img src="./img/logo.png" />
-                    </div>
-                    <div class="badges-container">
-
-                    </div>
-                    <div class="username">Sybrax<span>#3098</span></div>
-                    <hr />
-                </div>
-                </div>
-                <div class="card-content">
-                <div class="about-me" id="about-me">
-                    <div class="category-title">Actions</div>
-                    <a href="https://discordapp.com/invite/0sg9HNylRzK4SnCr" class="discord-dialog__btn">Join the server now</a>
-                </div>
-               
-                </div>
-            </div>
-        
-
         <script>
 
             var token = "ODgxODc5NjY2MjA4NjgyMTA1.GQ4NyN.ea2S45teq4kuctI_cVQbohPyv98S04sq5A9kEc";
@@ -91,7 +67,10 @@
                 </div>
             </div>
     `;
-            ref.insertAdjacentHTML('afterbegin',htmlCode); 
+            for (i=0;i<3;i++) {
+                ref.insertAdjacentHTML('afterbegin',htmlCode); 
+            }
+            
         </script>
         </div>
     </section>
