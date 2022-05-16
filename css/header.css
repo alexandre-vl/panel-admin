@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #a395e9/* #0b111e; */
+    background-color: #0b111e/* #0b111e; */
 }
 
 /* NAVBAR */
@@ -37,7 +37,13 @@ body {
 }
 
 .big-titles h1, h2{
+    margin: 5px;
     text-align: center;
     justify-content: center;
     color:#f0f2f4;
+}
+
+.big-titles h2{
+    color:#babec4;
+    font-size: .875rem;
 }

@@ -47,12 +47,21 @@ html {
   border-top: 6px solid #202020;
 }
 
+.cards-section {
+  padding: 10% 10%;
+  background-color:#2c2f33;
+}
+
 .card-container {
 
   display: flex;
+  
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
+
 
 }
 
@@ -69,7 +78,8 @@ html {
   box-shadow: 0px 0px 16px 3px rgba(0, 0, 0, 0.2);
   overflow: auto;
   scrollbar-width: none;
-  margin: 10px;
+  margin-bottom: 10px;
+
   
 }
 
@@ -287,14 +297,12 @@ html {
   border-color: orange;
 }
 
-@media screen and (max-width: 140px) {
+@media screen and (max-width: 800px) {
   .card-container {
-    width: 960px;
-  }
-  .card:last-child {
-    display: none;
+    flex-direction: column;
   }
 }
+
 
 
 
