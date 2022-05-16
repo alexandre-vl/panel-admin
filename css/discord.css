@@ -61,6 +61,7 @@ html {
   box-sizing: border-box;
   background: #171717;
   width: 300px;
+  max-width: 300px;
   height: max-content;
   max-height: 95%;
   border-radius: 9px;
